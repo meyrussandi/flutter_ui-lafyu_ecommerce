@@ -8,14 +8,23 @@ environment:
 dependencies: 
   cupertino_icons: ^1.0.2
   get: 4.3.8
+  google_fonts: ^2.1.0
   flutter: 
     sdk: flutter
 
-dev_dependencies: 
+dev_dependencies:
   flutter_lints: ^1.0.0
-  flutter_test: 
+  flutter_native_splash: ^1.3.1
+  flutter_test:
     sdk: flutter
 
-flutter: 
+flutter:
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/logos/
   uses-material-design: true
 
+flutter_native_splash:
+  color: "#40bfff"
+  image: assets/logos/logo_white.png
