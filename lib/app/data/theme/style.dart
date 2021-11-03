@@ -8,30 +8,30 @@ double scale = Get.width <= 320 ? 0.75 : 1;
 
 class BorderStyles {
   static Border borderGrey =
-      Border.all(color: Colors.grey.withOpacity(0.4), width: 1.5);
+      Border.all(color: MyColors.lightColor.withOpacity(0.4), width: 1.5);
   static Border borderPrimary =
       Border.all(color: MyColors.blueColor, width: 1.5);
 
   static OutlineInputBorder enableTextField = OutlineInputBorder(
     borderSide: BorderSide(color: MyColors.greyColor, width: Strokes.xthin),
-    borderRadius: Corners.lgBorder,
+    borderRadius: Corners.medBorder,
   );
 
   static OutlineInputBorder focusTextField = OutlineInputBorder(
     borderSide:
-        const BorderSide(color: MyColors.greenColor, width: Strokes.med),
-    borderRadius: Corners.lgBorder,
+        const BorderSide(color: MyColors.blueColor, width: Strokes.med),
+    borderRadius: Corners.medBorder,
   );
 
   static OutlineInputBorder disableTextField = OutlineInputBorder(
     borderSide: BorderSide(color: MyColors.lightColor, width: Strokes.xthin),
-    borderRadius: Corners.lgBorder,
+    borderRadius: Corners.medBorder,
   );
 
   static OutlineInputBorder errorTextField = OutlineInputBorder(
     borderSide:
         const BorderSide(color: MyColors.redColor, width: Strokes.xthin),
-    borderRadius: Corners.lgBorder,
+    borderRadius: Corners.medBorder,
   );
 }
 
@@ -40,7 +40,7 @@ InputDecoration inputDecoration(
   return InputDecoration(
       isDense: true,
       filled: true,
-      fillColor: MyColors.lightColor,
+      fillColor: MyColors.whiteColor,
       contentPadding:
           EdgeInsets.symmetric(horizontal: Insets.med, vertical: Insets.med),
       hintText: hintText,
@@ -54,7 +54,7 @@ InputDecoration inputDecoration(
       prefixIconConstraints:
           BoxConstraints(minHeight: Sizes.lg, minWidth: Sizes.lg),
       suffixIcon: suffixIcon,
-      hintStyle: TextStyles.normalText2.copyWith(color: MyColors.lightColor));
+      hintStyle: TextStyles.normalText2.copyWith(color: MyColors.greyColor));
 }
 
 Widget verticalSpace(double v) {
