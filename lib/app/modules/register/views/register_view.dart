@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_lafyu_e_commerce/app/data/theme/data.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/button/button_default.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/form/form_default.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/form/form_email.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/form/form_password.dart';
+import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/buttons/button_default.dart';
+import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/forms/form_default.dart';
+import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/forms/form_email.dart';
+import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/forms/form_password.dart';
 
 import 'package:get/get.dart';
 

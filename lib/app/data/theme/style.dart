@@ -24,7 +24,7 @@ class BorderStyles {
   );
 
   static OutlineInputBorder disableTextField = OutlineInputBorder(
-    borderSide: BorderSide(color: MyColors.lightColor, width: Strokes.xthin),
+    borderSide: BorderSide(color: MyColors.greyColor, width: Strokes.xthin),
     borderRadius: Corners.medBorder,
   );
 

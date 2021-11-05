@@ -1,0 +1,8 @@
+{
+  "name" : "adidas",
+  "original_price" : 534.3,
+  "discount" : 24,
+  "discount_price" : 234.87,
+  "total_price" : 299.43,
+  "rating" : 4
+}

@@ -7,11 +7,10 @@ import 'package:flutter_ui_lafyu_e_commerce/app/data/theme/data.dart';
 import 'package:flutter_ui_lafyu_e_commerce/app/data/theme/style.dart';
 import 'package:flutter_ui_lafyu_e_commerce/app/data/theme/theme.dart';
 import 'package:flutter_ui_lafyu_e_commerce/app/routes/app_pages.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/button/button_default.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/button/button_default_outline.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/form/form_default.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/form/form_email.dart';
-import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/form/form_password.dart';
+import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/buttons/button_default.dart';
+import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/buttons/button_default_outline.dart';
+import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/forms/form_email.dart';
+import 'package:flutter_ui_lafyu_e_commerce/utils/widgets/forms/form_password.dart';
 
 import 'package:get/get.dart';
 
@@ -56,7 +55,9 @@ class LoginView extends GetView<LoginController> {
                     onChange: (v) {},
                     controller: controller.controllerPassword),
                 verticalSpace(Insets.lg),
-                ButtonDefault(onPressed: () {}, label: "Sign In"),
+                ButtonDefault(onPressed: () {
+                  Get.offAllNamed(Routes.HOME);
+                }, label: "Sign In"),
                 Row(
                   children: [
                     Expanded(
